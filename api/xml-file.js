@@ -1,4 +1,5 @@
 // Vercel serverless function to serve XML with custom headers
+// Force charset to ISO-8859-1
 export default function handler(req, res) {
   // Sample XML content
   const xmlContent = `<?xml version="1.0" encoding="ISO-8859-1"?>
