@@ -183,7 +183,7 @@ export default function handler(req, res) {
                       </urlset>`;
 
   // Set custom headers
-  res.setHeader('Content-Type', 'application/xml; charset=utf-8');
+  res.setHeader('Content-Type', 'application/xml; charset=iso-8859-1);
   res.setHeader('X-Custom-Header', 'MyCustomValue');
   res.setHeader('Access-Control-Allow-Origin', '*'); // CORS if needed
   res.setHeader('Cache-Control', 's-maxage=86400'); // Cache for 24 hours
