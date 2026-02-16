@@ -184,7 +184,7 @@ export default function handler(req, res) {
                       </urlset>`;
 
   // Set custom headers
-  res.setHeader('Content-Type', 'application/xml; charset=iso-8859-1');
+  res.setHeader('Content-Type', 'application/xml; charset=UTF-8');
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=86400');
 

@@ -2,7 +2,7 @@
 // Force charset to ISO-8859-1
 export default function handler(req, res) {
   // Sample XML content
-  const xmlContent = `<?xml version="1.0" encoding="ISO-8859-1"?>
+  const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
                       <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:coveo="https://www.coveo.com/en/company/about-us">
                           <url>
                               <loc>https://vraylar.p.cwcm-admp.com/content/dam/vraylar/pdf/US-VRAA-230242 for web.pdf</loc>
@@ -184,7 +184,7 @@ export default function handler(req, res) {
                       </urlset>`;
 
   // Set custom headers
-  res.setHeader('Content-Type', 'application/xml; charset=iso-8859-1');
+  res.setHeader('Content-Type', 'application/xml; charset=UTF-8);
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=86400');
 
