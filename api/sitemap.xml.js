@@ -189,5 +189,5 @@ export default function handler(req, res) {
   res.setHeader('Cache-Control', 's-maxage=86400');
 
   // Send XML response
-  res.status(200).send(xmlContent);
+  res.status(200).end(xmlContent);
 }

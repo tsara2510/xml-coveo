@@ -187,7 +187,7 @@ export default function handler(req, res) {
   res.setHeader('Content-Type', 'application/xml; charset=iso-8859-1');
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=86400');
-  
+
   // Send XML response
-  res.status(200).send(xmlContent);
+  res.status(200).end(xmlContent);
 }
